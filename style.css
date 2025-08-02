@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.301)), url(./boshi\ 1.jpg);
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.logo {
+  width: 190px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+
+}
+
+.content h1 {
+  color: white;
+  font-size: 35px;
+  margin: 35px;
+}
+
+.content p {
+  color: white;
+  margin: 30px;
+}
+
+.content button {
+  width: 200px;
+  padding: 15px, 0px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+}
+
+.content button:hover {
+  background-color: red;
+  outline: none;
+  border: none;
+}
+
+.second {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.301)), url(./boshi\ 2.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.322)), url(./img1.avif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.card-main {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.card-main h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.card-main p {
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.card:hover .card-main h1 {
+  display: none;
+}
+
+.card:hover .card-main p {
+  display: block;
+}
+
+.card:hover {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.61)), url(./mclern.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-footer {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-footer button {
+  margin: 10px;
+  width: 200px;
+  padding: 10px, 0px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+
+}
+
+.card-footer button:hover {
+  background-color: red;
+  border-top-left-radius: 0px;
+  border: 1px solid red;
+  transition: all .5s;
+}
+
+.second3 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.452)), url(./img\ 3.webp);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 75%;
+  height: 75vh;
+  display: flex;
+
+
+  background-color: white;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(240, 240, 240, 0.60);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.container div {
+  width: 50%;
+  height: 100%;
+}
+
+.left-side img {
+  position: relative;
+  top: 50px;
+  left: 300px;
+  width: 1000px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-side p {
+  line-height: 2;
+  font-size: 20px;
+
+}
+
+.right-side button {
+  width: 200px;
+  width: 50px;
+  background-color: orangered;
+  color: white;
+  opacity: 0, 8;
+}
+
+.right-side button :hover {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.301)), url(./img\ 2.jpg);
+    background-size: cover;
+  }
+
+  .second {
+    background: none;
+    flex-wrap: wrap;
+  }
+
+  .second .card {
+    transform: scale(0.8);
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  ul li a {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 120px;
+
+  }
+
+  .content {
+    top: 300px;
+  }
+}
